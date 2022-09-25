@@ -17,11 +17,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="EmptyFieldTest.txt" />
     <None Remove="Moq" />
     <None Remove="StartsAndEndsWithNewLine.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="StartsAndEndsWithNewLine.txt" />
+    <Content Include="EmptyFieldTest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StartsAndEndsWithNewLine.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TechJobsTest\TechJobsTest.csproj" />

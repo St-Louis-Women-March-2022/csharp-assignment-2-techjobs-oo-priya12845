@@ -1,4 +1,4 @@
-﻿/*
+﻿
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechJobsOO;
 using TechJobsOOAutograded;
-using TechJobsTests;
+using TechJobsTest;
 
 namespace TechJobsOOTests
 {
@@ -58,7 +58,8 @@ namespace TechJobsOOTests
             techJobs.RunProgram();
 
             var output = stringWriter.ToString();
-
+           // char first = text[0];
+           // char firstoutput = output[0];
             //verify
            Assert.AreEqual(text, output, "New Line issue");
         }
@@ -156,4 +157,4 @@ namespace TechJobsOOTests
         }
     }
 }
-*/
+

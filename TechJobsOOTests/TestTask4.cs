@@ -1,9 +1,8 @@
-﻿/*
+﻿
 using System;
 using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TechJobsTests;
-
+using TechJobsTest;
 
 namespace TechJobsOOTests
 {
@@ -58,7 +57,7 @@ namespace TechJobsOOTests
             //verify test was created
             Assert.AreEqual("true", existsCheck, "'TestJobConstructorSetsAllFields' not found");
         }
-
+            
 
         [TestMethod] //3
         public void Test_TestJobsForEquality()
@@ -152,5 +151,5 @@ namespace TechJobsOOTests
 
     }
 }
-*/
+
 

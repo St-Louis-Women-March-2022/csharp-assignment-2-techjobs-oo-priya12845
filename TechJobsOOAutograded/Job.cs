@@ -78,7 +78,7 @@ namespace TechJobsOO
             {
                 completeString += "\nName: Data not available";
             }
-            if (this.EmployerName.Value != null)
+            if (this.EmployerName.Value != null && this.EmployerName.Value != "")
             {
                 completeString += "\nEmployer: " + this.EmployerName.ToString();
             }
@@ -86,15 +86,15 @@ namespace TechJobsOO
             {
                 completeString += "\nEmployer: Data not available";
             }
-            if (this.EmployerLocation.Value != null)
+            if (this.EmployerLocation.Value != "" && this.EmployerLocation.Value != null)
             {
-                completeString += "\nLocation: " + this.EmployerLocation.ToString();
+                completeString += "\nLocation: " + this.EmployerLocation.Value;
             }
             else
             {
                 completeString += "\nLocation: Data not available";
             }
-            if (this.JobType.Value != null)
+            if (this.JobType.Value != null && this.JobType.Value != "")
             {
                 completeString += "\nPosition Type: " + this.JobType.ToString();
             }
@@ -102,7 +102,7 @@ namespace TechJobsOO
             {
                 completeString += "\nPosition Type: Data not available";
             }
-            if (this.JobCoreCompetency.Value != null)
+            if (this.JobCoreCompetency.Value != null && this.JobCoreCompetency.Value != "")
             {
                 completeString += "\nCore Competency: " + this.JobCoreCompetency.ToString() + "\n";
             }
@@ -110,10 +110,10 @@ namespace TechJobsOO
             {
                 completeString += "\nCore Competency: Data not available" + "\n";
             }
-            if (this.Name == null && this.EmployerName == null && this.EmployerLocation == null && this.JobType == null && this.JobCoreCompetency == null)
-            {
-                return "OOPS!  This job does not seem to exist.";
-            }
+            //if (this.Name == null && this.EmployerName == null && this.EmployerLocation == null && this.JobType == null && this.JobCoreCompetency == null)
+            //{
+            //    return "OOPS!  This job does not seem to exist.";
+            //}
             return completeString;
             
         }

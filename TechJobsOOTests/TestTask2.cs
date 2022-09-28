@@ -12,11 +12,11 @@ namespace TechJobsOOTests
     public class TestTask2
     {
 
-    // Testing Location --------------------------------------------------------
+        // Testing Location --------------------------------------------------------
 
         [TestMethod] //1
         public void Test_Second_Location_Constructor_Exists()
-        { 
+        {
             Type locType = typeof(Location);
             ConstructorInfo[] constructorInfos = locType.GetConstructors();
             List<string> conNames = new List<string>();
@@ -49,6 +49,7 @@ namespace TechJobsOOTests
             //setup
             Location testLocation = new Location("Desert");
 
+
             //verify
             Assert.AreEqual("Desert", testLocation.Value, "Is Value set at time of declaration?");
             Assert.AreEqual("St. Louis", testLocation.Value = "St. Louis", "Not able to update value");
@@ -59,11 +60,18 @@ namespace TechJobsOOTests
         public void Test_Second_Location_Constructor_Initializes_Id()
         {
             //setup
-            Location testLocation = new Location();
+            //Location testLocation = new Location("Desert");
+            //Location testLocation = new Location();
+            // we have to called twice to see increment to 2. see constructor code in Location.cs line 14-15
+            //Location testLocation = new Location();
+            Location testLocation = new Location("Desert");
+
             Console.WriteLine(testLocation.Id);
 
             //verify
+            // we have to use to see testLocation2.see constructor code in Location.cs line 14 - 15
             Assert.AreEqual(1, testLocation.Id, "Second constructor not able to update Id");
+            //Assert.AreEqual(2, testLocation.Id, "Second constructor not able to update Id");
             Assert.IsFalse(testLocation.Id == 4, "Second constructor passes value to Id. Is this desirable?");
         }
 
@@ -76,11 +84,11 @@ namespace TechJobsOOTests
             CoreCompetency testComp = new CoreCompetency("Persistence");
             CoreCompetency testComp2 = new CoreCompetency("Persistence");
 
-            Type ccType = typeof(CoreCompetency); 
+            Type ccType = typeof(CoreCompetency);
             MemberInfo[] memberInfos = ccType.GetMembers();
             string nameCheck = "get_Id";
             string existsCheck = "";
-            
+
             foreach (var mCheck in memberInfos)
             {
                 if (mCheck.Name == nameCheck)
@@ -180,4 +188,3 @@ namespace TechJobsOOTests
         }
     }
 }
-

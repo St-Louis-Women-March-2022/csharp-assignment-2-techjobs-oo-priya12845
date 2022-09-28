@@ -16,7 +16,7 @@ namespace TechJobsOOAutograded
             nextId++;
         }
 
-        public JobField(string value)
+        public JobField(string value) : this()
         {
             Value = value;
         }

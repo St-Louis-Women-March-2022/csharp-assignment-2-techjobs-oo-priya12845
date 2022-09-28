@@ -3,38 +3,38 @@ using TechJobsOOAutograded;
 
 namespace TechJobsOO
 {
-    public class Employer
+    public class Employer : JobField
     {
-        public int Id { get; }
-        private static int nextId = 1;
-        public string Value { get; set; }
+        ////public int Id { get; }
+        ////private static int nextId = 1;
+        ////public string Value { get; set; }
 
-        public Employer()
+        //public Employer() : base()
+        //{ 
+        ////    Id = nextId;
+        ////    nextId++;
+        //}
+
+        public Employer(string value) : base(value)
         {
-            Id = nextId;
-            nextId++;
+            //Value = value;
         }
 
-        public Employer(string value) : this()
-        {
-            Value = value;
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    return obj is Employer employer &&
+        //           Id == employer.Id;
+        //}
 
-        public override bool Equals(object obj)
-        {
-            return obj is Employer employer &&
-                   Id == employer.Id;
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id);
+        //}
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Id);
-        }
-
-        public override string ToString()
-        {
-            return Value;
-        }
+        //public override string ToString()
+        //{
+        //    return Value;
+        //}
 
     }
 }

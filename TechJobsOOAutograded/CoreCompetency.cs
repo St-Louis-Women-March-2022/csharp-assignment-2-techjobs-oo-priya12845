@@ -3,41 +3,41 @@ using TechJobsOOAutograded;
 
 namespace TechJobsOO
 {
-    public class CoreCompetency
+    public class CoreCompetency : JobField
     {
-
-        private int id;
-        private static int nextId = 1;
-        private string value;
+        //Modifiers changed from private to public
+        //public int Id { get; }
+        //public static int nextId = 1;
+        //public string Value { get; set; }
 
         // TODO: Change the fields to auto-implemented properties.
 
-        public CoreCompetency()
+        //public CoreCompetency() : base()
+        //{
+        //    //Id = nextId;
+        //    //nextId++;
+        //}
+
+        public CoreCompetency(string value) : base(value)
         {
-            id = nextId;
-            nextId++;
+          //  Value = value;
         }
 
-        public CoreCompetency(string v) : this()
-        {
-            value = v;
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    return obj is CoreCompetency competency &&
+        //           Id == competency.Id;
+        //}
 
-        public override bool Equals(object obj)
-        {
-            return obj is CoreCompetency competency &&
-                   id == competency.id;
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id);
+        //}
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(id);
-        }
-
-        public override string ToString()
-        {
-            return value;
-        }
+        //public override string ToString()
+        //{
+        //    return Value;
+        //}
 
     }
 }

@@ -1,13 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.810.23
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechJobsOOAutograded", "TechJobsOOAutograded\TechJobsOOAutograded.csproj", "{55D93435-08C0-4B4D-A130-023D2B8A6E74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechJobsOOAutograded", "TechJobsOOAutograded\TechJobsOOAutograded.csproj", "{55D93435-08C0-4B4D-A130-023D2B8A6E74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechJobsOOTests", "TechJobsOOTests\TechJobsOOTests.csproj", "{6A1EFE18-5C69-4A2B-AB23-D1338AA28CE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechJobsOOTests", "TechJobsOOTests\TechJobsOOTests.csproj", "{6A1EFE18-5C69-4A2B-AB23-D1338AA28CE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechJobsTest", "TechJobsTest\TechJobsTest.csproj", "{62DB0506-FC4E-4079-992A-78C570ED6B92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechJobsTest", "TechJobsTest\TechJobsTest.csproj", "{62DB0506-FC4E-4079-992A-78C570ED6B92}"
+	ProjectSection(ProjectDependencies) = postProject
+		{55D93435-08C0-4B4D-A130-023D2B8A6E74} = {55D93435-08C0-4B4D-A130-023D2B8A6E74}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
